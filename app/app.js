@@ -1,5 +1,4 @@
-(function () {
-  "use strict";
+import "./klondike/scoring";
 
-  angular.module("solitaire", ["klondike", "ngDraggable"]);
-})();
+angular.module("solitaire", ["klondike", "ngDraggable"]);
+
