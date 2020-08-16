@@ -1,0 +1,464 @@
+{
+  "errors": [],
+  "warnings": [
+    "configuration\nThe 'mode' option has not been set, webpack will fallback to 'production' for this value. Set 'mode' option to 'development' or 'production' to enable defaults for each environment.\nYou can also set it to 'none' to disable any default behavior. Learn more: https://webpack.js.org/configuration/mode/"
+  ],
+  "version": "4.44.1",
+  "hash": "f2f6d952426c2eed9431",
+  "time": 168,
+  "builtAt": 1597583782764,
+  "publicPath": "",
+  "outputPath": "/Users/sherpal/Desktop/pluralSiteTuts/webpackCourseAugust2020/dist",
+  "assetsByChunkName": {
+    "main": "main.js"
+  },
+  "assets": [
+    {
+      "name": "main.js",
+      "size": 3034,
+      "chunks": [
+        0
+      ],
+      "chunkNames": [
+        "main"
+      ],
+      "info": {},
+      "emitted": true
+    }
+  ],
+  "filteredAssets": 0,
+  "entrypoints": {
+    "main": {
+      "chunks": [
+        0
+      ],
+      "assets": [
+        "main.js"
+      ],
+      "children": {},
+      "childAssets": {}
+    }
+  },
+  "namedChunkGroups": {
+    "main": {
+      "chunks": [
+        0
+      ],
+      "assets": [
+        "main.js"
+      ],
+      "children": {},
+      "childAssets": {}
+    }
+  },
+  "chunks": [
+    {
+      "id": 0,
+      "rendered": true,
+      "initial": true,
+      "entry": true,
+      "size": 2491,
+      "names": [
+        "main"
+      ],
+      "files": [
+        "main.js"
+      ],
+      "hash": "d823008988efaae6e195",
+      "siblings": [],
+      "parents": [],
+      "children": [],
+      "childrenByOrder": {},
+      "modules": [
+        {
+          "id": 0,
+          "identifier": "multi /Users/sherpal/Desktop/pluralSiteTuts/webpackCourseAugust2020/app/app.js /Users/sherpal/Desktop/pluralSiteTuts/webpackCourseAugust2020/app/dist/app.bundle.js",
+          "name": "multi ./app/app.js ./app/dist/app.bundle.js",
+          "index": 0,
+          "index2": 3,
+          "size": 40,
+          "built": true,
+          "optional": false,
+          "prefetched": false,
+          "chunks": [
+            0
+          ],
+          "issuer": null,
+          "issuerId": null,
+          "issuerName": null,
+          "issuerPath": null,
+          "failed": false,
+          "errors": 0,
+          "warnings": 0,
+          "assets": [],
+          "reasons": [
+            {
+              "moduleId": null,
+              "moduleIdentifier": null,
+              "module": null,
+              "moduleName": null,
+              "type": "multi entry"
+            }
+          ],
+          "usedExports": true,
+          "providedExports": null,
+          "optimizationBailout": [
+            "ModuleConcatenation bailout: Module is not an ECMAScript module"
+          ],
+          "depth": 0
+        },
+        {
+          "id": 1,
+          "identifier": "/Users/sherpal/Desktop/pluralSiteTuts/webpackCourseAugust2020/app/app.js",
+          "name": "./app/app.js",
+          "index": 1,
+          "index2": 1,
+          "size": 89,
+          "cacheable": true,
+          "built": true,
+          "optional": false,
+          "prefetched": false,
+          "chunks": [
+            0
+          ],
+          "issuer": "multi /Users/sherpal/Desktop/pluralSiteTuts/webpackCourseAugust2020/app/app.js /Users/sherpal/Desktop/pluralSiteTuts/webpackCourseAugust2020/app/dist/app.bundle.js",
+          "issuerId": 0,
+          "issuerName": "multi ./app/app.js ./app/dist/app.bundle.js",
+          "issuerPath": [
+            {
+              "id": 0,
+              "identifier": "multi /Users/sherpal/Desktop/pluralSiteTuts/webpackCourseAugust2020/app/app.js /Users/sherpal/Desktop/pluralSiteTuts/webpackCourseAugust2020/app/dist/app.bundle.js",
+              "name": "multi ./app/app.js ./app/dist/app.bundle.js"
+            }
+          ],
+          "failed": false,
+          "errors": 0,
+          "warnings": 0,
+          "assets": [],
+          "reasons": [
+            {
+              "moduleId": 0,
+              "moduleIdentifier": "multi /Users/sherpal/Desktop/pluralSiteTuts/webpackCourseAugust2020/app/app.js /Users/sherpal/Desktop/pluralSiteTuts/webpackCourseAugust2020/app/dist/app.bundle.js",
+              "module": "multi ./app/app.js ./app/dist/app.bundle.js",
+              "moduleName": "multi ./app/app.js ./app/dist/app.bundle.js",
+              "type": "single entry",
+              "userRequest": "/Users/sherpal/Desktop/pluralSiteTuts/webpackCourseAugust2020/app/app.js",
+              "loc": "main[0]"
+            }
+          ],
+          "usedExports": true,
+          "providedExports": [],
+          "optimizationBailout": [
+            "ModuleConcatenation bailout: Module is referenced from these modules with unsupported syntax: multi ./app/app.js ./app/dist/app.bundle.js (referenced with single entry)"
+          ],
+          "depth": 1,
+          "source": "import \"./klondike/scoring\";\n\nangular.module(\"solitaire\", [\"klondike\", \"ngDraggable\"]);\n\n"
+        },
+        {
+          "id": 2,
+          "identifier": "/Users/sherpal/Desktop/pluralSiteTuts/webpackCourseAugust2020/app/klondike/scoring.js",
+          "name": "./app/klondike/scoring.js",
+          "index": 2,
+          "index2": 0,
+          "size": 867,
+          "cacheable": true,
+          "built": true,
+          "optional": false,
+          "prefetched": false,
+          "chunks": [
+            0
+          ],
+          "issuer": "/Users/sherpal/Desktop/pluralSiteTuts/webpackCourseAugust2020/app/app.js",
+          "issuerId": 1,
+          "issuerName": "./app/app.js",
+          "issuerPath": [
+            {
+              "id": 0,
+              "identifier": "multi /Users/sherpal/Desktop/pluralSiteTuts/webpackCourseAugust2020/app/app.js /Users/sherpal/Desktop/pluralSiteTuts/webpackCourseAugust2020/app/dist/app.bundle.js",
+              "name": "multi ./app/app.js ./app/dist/app.bundle.js"
+            },
+            {
+              "id": 1,
+              "identifier": "/Users/sherpal/Desktop/pluralSiteTuts/webpackCourseAugust2020/app/app.js",
+              "name": "./app/app.js"
+            }
+          ],
+          "failed": false,
+          "errors": 0,
+          "warnings": 0,
+          "assets": [],
+          "reasons": [
+            {
+              "moduleId": 1,
+              "moduleIdentifier": "/Users/sherpal/Desktop/pluralSiteTuts/webpackCourseAugust2020/app/app.js",
+              "module": "./app/app.js",
+              "moduleName": "./app/app.js",
+              "type": "harmony side effect evaluation",
+              "userRequest": "./klondike/scoring",
+              "loc": "1:0-28"
+            }
+          ],
+          "usedExports": false,
+          "providedExports": null,
+          "optimizationBailout": [
+            "ModuleConcatenation bailout: Module is not an ECMAScript module"
+          ],
+          "depth": 2,
+          "source": "angular.module(\"klondike.scoring\", [])\n  .service(\"scoring\", [function Scoring() {\n    \"use strict\";\n\n    this.score = 0;\n\n    this.newGame = function () {\n      this.score = 0;\n    };\n    this.tableauCardTurnedUp = function () {\n      this.score += 5;\n    };\n    this.dropped = function (source, destionation) {\n      this.score += scoreForMoving(source, destionation) || 0;\n    };\n    this.wasteRecycled = function () {\n      this.score = Math.max(this.score - 100, 0);\n    };\n\n    function scoreForMoving(source, destionation) {\n      if (destionation.name === \"TableauPile\") {\n        if (source.name === \"FoundationPile\") {\n          return -15;\n        }\n        return 5;\n      }\n      if (destionation.name === \"FoundationPile\") {\n        if (source.name === \"TableauPile\" || source.name === \"WastePile\") {\n          return 10;\n        }\n      }\n    }\n  }]);\n"
+        },
+        {
+          "id": 3,
+          "identifier": "/Users/sherpal/Desktop/pluralSiteTuts/webpackCourseAugust2020/app/dist/app.bundle.js",
+          "name": "./app/dist/app.bundle.js",
+          "index": 3,
+          "index2": 2,
+          "size": 1495,
+          "cacheable": true,
+          "built": true,
+          "optional": false,
+          "prefetched": false,
+          "chunks": [
+            0
+          ],
+          "issuer": "multi /Users/sherpal/Desktop/pluralSiteTuts/webpackCourseAugust2020/app/app.js /Users/sherpal/Desktop/pluralSiteTuts/webpackCourseAugust2020/app/dist/app.bundle.js",
+          "issuerId": 0,
+          "issuerName": "multi ./app/app.js ./app/dist/app.bundle.js",
+          "issuerPath": [
+            {
+              "id": 0,
+              "identifier": "multi /Users/sherpal/Desktop/pluralSiteTuts/webpackCourseAugust2020/app/app.js /Users/sherpal/Desktop/pluralSiteTuts/webpackCourseAugust2020/app/dist/app.bundle.js",
+              "name": "multi ./app/app.js ./app/dist/app.bundle.js"
+            }
+          ],
+          "failed": false,
+          "errors": 0,
+          "warnings": 0,
+          "assets": [],
+          "reasons": [
+            {
+              "moduleId": 0,
+              "moduleIdentifier": "multi /Users/sherpal/Desktop/pluralSiteTuts/webpackCourseAugust2020/app/app.js /Users/sherpal/Desktop/pluralSiteTuts/webpackCourseAugust2020/app/dist/app.bundle.js",
+              "module": "multi ./app/app.js ./app/dist/app.bundle.js",
+              "moduleName": "multi ./app/app.js ./app/dist/app.bundle.js",
+              "type": "single entry",
+              "userRequest": "/Users/sherpal/Desktop/pluralSiteTuts/webpackCourseAugust2020/app/dist/app.bundle.js",
+              "loc": "main[1]"
+            }
+          ],
+          "usedExports": true,
+          "providedExports": null,
+          "optimizationBailout": [
+            "ModuleConcatenation bailout: Module is not an ECMAScript module"
+          ],
+          "depth": 1,
+          "source": "!function(e){var n={};function t(r){if(n[r])return n[r].exports;var o=n[r]={i:r,l:!1,exports:{}};return e[r].call(o.exports,o,o.exports,t),o.l=!0,o.exports}t.m=e,t.c=n,t.d=function(e,n,r){t.o(e,n)||Object.defineProperty(e,n,{enumerable:!0,get:r})},t.r=function(e){\"undefined\"!=typeof Symbol&&Symbol.toStringTag&&Object.defineProperty(e,Symbol.toStringTag,{value:\"Module\"}),Object.defineProperty(e,\"__esModule\",{value:!0})},t.t=function(e,n){if(1&n&&(e=t(e)),8&n)return e;if(4&n&&\"object\"==typeof e&&e&&e.__esModule)return e;var r=Object.create(null);if(t.r(r),Object.defineProperty(r,\"default\",{enumerable:!0,value:e}),2&n&&\"string\"!=typeof e)for(var o in e)t.d(r,o,function(n){return e[n]}.bind(null,o));return r},t.n=function(e){var n=e&&e.__esModule?function(){return e.default}:function(){return e};return t.d(n,\"a\",n),n},t.o=function(e,n){return Object.prototype.hasOwnProperty.call(e,n)},t.p=\"\",t(t.s=0)}([function(e,n,t){\"use strict\";t.r(n);t(1);angular.module(\"solitaire\",[\"klondike\",\"ngDraggable\"])},function(e,n){angular.module(\"klondike.scoring\",[]).service(\"scoring\",[function(){\"use strict\";this.score=0,this.newGame=function(){this.score=0},this.tableauCardTurnedUp=function(){this.score+=5},this.dropped=function(e,n){this.score+=function(e,n){if(\"TableauPile\"===n.name)return\"FoundationPile\"===e.name?-15:5;if(\"FoundationPile\"===n.name&&(\"TableauPile\"===e.name||\"WastePile\"===e.name))return 10}(e,n)||0},this.wasteRecycled=function(){this.score=Math.max(this.score-100,0)}}])}]);"
+        }
+      ],
+      "filteredModules": 0,
+      "origins": [
+        {
+          "module": "",
+          "moduleIdentifier": "",
+          "moduleName": "",
+          "loc": "main",
+          "request": null,
+          "reasons": []
+        }
+      ]
+    }
+  ],
+  "modules": [
+    {
+      "id": 0,
+      "identifier": "multi /Users/sherpal/Desktop/pluralSiteTuts/webpackCourseAugust2020/app/app.js /Users/sherpal/Desktop/pluralSiteTuts/webpackCourseAugust2020/app/dist/app.bundle.js",
+      "name": "multi ./app/app.js ./app/dist/app.bundle.js",
+      "index": 0,
+      "index2": 3,
+      "size": 40,
+      "built": true,
+      "optional": false,
+      "prefetched": false,
+      "chunks": [
+        0
+      ],
+      "issuer": null,
+      "issuerId": null,
+      "issuerName": null,
+      "issuerPath": null,
+      "failed": false,
+      "errors": 0,
+      "warnings": 0,
+      "assets": [],
+      "reasons": [
+        {
+          "moduleId": null,
+          "moduleIdentifier": null,
+          "module": null,
+          "moduleName": null,
+          "type": "multi entry"
+        }
+      ],
+      "usedExports": true,
+      "providedExports": null,
+      "optimizationBailout": [
+        "ModuleConcatenation bailout: Module is not an ECMAScript module"
+      ],
+      "depth": 0
+    },
+    {
+      "id": 1,
+      "identifier": "/Users/sherpal/Desktop/pluralSiteTuts/webpackCourseAugust2020/app/app.js",
+      "name": "./app/app.js",
+      "index": 1,
+      "index2": 1,
+      "size": 89,
+      "cacheable": true,
+      "built": true,
+      "optional": false,
+      "prefetched": false,
+      "chunks": [
+        0
+      ],
+      "issuer": "multi /Users/sherpal/Desktop/pluralSiteTuts/webpackCourseAugust2020/app/app.js /Users/sherpal/Desktop/pluralSiteTuts/webpackCourseAugust2020/app/dist/app.bundle.js",
+      "issuerId": 0,
+      "issuerName": "multi ./app/app.js ./app/dist/app.bundle.js",
+      "issuerPath": [
+        {
+          "id": 0,
+          "identifier": "multi /Users/sherpal/Desktop/pluralSiteTuts/webpackCourseAugust2020/app/app.js /Users/sherpal/Desktop/pluralSiteTuts/webpackCourseAugust2020/app/dist/app.bundle.js",
+          "name": "multi ./app/app.js ./app/dist/app.bundle.js"
+        }
+      ],
+      "failed": false,
+      "errors": 0,
+      "warnings": 0,
+      "assets": [],
+      "reasons": [
+        {
+          "moduleId": 0,
+          "moduleIdentifier": "multi /Users/sherpal/Desktop/pluralSiteTuts/webpackCourseAugust2020/app/app.js /Users/sherpal/Desktop/pluralSiteTuts/webpackCourseAugust2020/app/dist/app.bundle.js",
+          "module": "multi ./app/app.js ./app/dist/app.bundle.js",
+          "moduleName": "multi ./app/app.js ./app/dist/app.bundle.js",
+          "type": "single entry",
+          "userRequest": "/Users/sherpal/Desktop/pluralSiteTuts/webpackCourseAugust2020/app/app.js",
+          "loc": "main[0]"
+        }
+      ],
+      "usedExports": true,
+      "providedExports": [],
+      "optimizationBailout": [
+        "ModuleConcatenation bailout: Module is referenced from these modules with unsupported syntax: multi ./app/app.js ./app/dist/app.bundle.js (referenced with single entry)"
+      ],
+      "depth": 1,
+      "source": "import \"./klondike/scoring\";\n\nangular.module(\"solitaire\", [\"klondike\", \"ngDraggable\"]);\n\n"
+    },
+    {
+      "id": 2,
+      "identifier": "/Users/sherpal/Desktop/pluralSiteTuts/webpackCourseAugust2020/app/klondike/scoring.js",
+      "name": "./app/klondike/scoring.js",
+      "index": 2,
+      "index2": 0,
+      "size": 867,
+      "cacheable": true,
+      "built": true,
+      "optional": false,
+      "prefetched": false,
+      "chunks": [
+        0
+      ],
+      "issuer": "/Users/sherpal/Desktop/pluralSiteTuts/webpackCourseAugust2020/app/app.js",
+      "issuerId": 1,
+      "issuerName": "./app/app.js",
+      "issuerPath": [
+        {
+          "id": 0,
+          "identifier": "multi /Users/sherpal/Desktop/pluralSiteTuts/webpackCourseAugust2020/app/app.js /Users/sherpal/Desktop/pluralSiteTuts/webpackCourseAugust2020/app/dist/app.bundle.js",
+          "name": "multi ./app/app.js ./app/dist/app.bundle.js"
+        },
+        {
+          "id": 1,
+          "identifier": "/Users/sherpal/Desktop/pluralSiteTuts/webpackCourseAugust2020/app/app.js",
+          "name": "./app/app.js"
+        }
+      ],
+      "failed": false,
+      "errors": 0,
+      "warnings": 0,
+      "assets": [],
+      "reasons": [
+        {
+          "moduleId": 1,
+          "moduleIdentifier": "/Users/sherpal/Desktop/pluralSiteTuts/webpackCourseAugust2020/app/app.js",
+          "module": "./app/app.js",
+          "moduleName": "./app/app.js",
+          "type": "harmony side effect evaluation",
+          "userRequest": "./klondike/scoring",
+          "loc": "1:0-28"
+        }
+      ],
+      "usedExports": false,
+      "providedExports": null,
+      "optimizationBailout": [
+        "ModuleConcatenation bailout: Module is not an ECMAScript module"
+      ],
+      "depth": 2,
+      "source": "angular.module(\"klondike.scoring\", [])\n  .service(\"scoring\", [function Scoring() {\n    \"use strict\";\n\n    this.score = 0;\n\n    this.newGame = function () {\n      this.score = 0;\n    };\n    this.tableauCardTurnedUp = function () {\n      this.score += 5;\n    };\n    this.dropped = function (source, destionation) {\n      this.score += scoreForMoving(source, destionation) || 0;\n    };\n    this.wasteRecycled = function () {\n      this.score = Math.max(this.score - 100, 0);\n    };\n\n    function scoreForMoving(source, destionation) {\n      if (destionation.name === \"TableauPile\") {\n        if (source.name === \"FoundationPile\") {\n          return -15;\n        }\n        return 5;\n      }\n      if (destionation.name === \"FoundationPile\") {\n        if (source.name === \"TableauPile\" || source.name === \"WastePile\") {\n          return 10;\n        }\n      }\n    }\n  }]);\n"
+    },
+    {
+      "id": 3,
+      "identifier": "/Users/sherpal/Desktop/pluralSiteTuts/webpackCourseAugust2020/app/dist/app.bundle.js",
+      "name": "./app/dist/app.bundle.js",
+      "index": 3,
+      "index2": 2,
+      "size": 1495,
+      "cacheable": true,
+      "built": true,
+      "optional": false,
+      "prefetched": false,
+      "chunks": [
+        0
+      ],
+      "issuer": "multi /Users/sherpal/Desktop/pluralSiteTuts/webpackCourseAugust2020/app/app.js /Users/sherpal/Desktop/pluralSiteTuts/webpackCourseAugust2020/app/dist/app.bundle.js",
+      "issuerId": 0,
+      "issuerName": "multi ./app/app.js ./app/dist/app.bundle.js",
+      "issuerPath": [
+        {
+          "id": 0,
+          "identifier": "multi /Users/sherpal/Desktop/pluralSiteTuts/webpackCourseAugust2020/app/app.js /Users/sherpal/Desktop/pluralSiteTuts/webpackCourseAugust2020/app/dist/app.bundle.js",
+          "name": "multi ./app/app.js ./app/dist/app.bundle.js"
+        }
+      ],
+      "failed": false,
+      "errors": 0,
+      "warnings": 0,
+      "assets": [],
+      "reasons": [
+        {
+          "moduleId": 0,
+          "moduleIdentifier": "multi /Users/sherpal/Desktop/pluralSiteTuts/webpackCourseAugust2020/app/app.js /Users/sherpal/Desktop/pluralSiteTuts/webpackCourseAugust2020/app/dist/app.bundle.js",
+          "module": "multi ./app/app.js ./app/dist/app.bundle.js",
+          "moduleName": "multi ./app/app.js ./app/dist/app.bundle.js",
+          "type": "single entry",
+          "userRequest": "/Users/sherpal/Desktop/pluralSiteTuts/webpackCourseAugust2020/app/dist/app.bundle.js",
+          "loc": "main[1]"
+        }
+      ],
+      "usedExports": true,
+      "providedExports": null,
+      "optimizationBailout": [
+        "ModuleConcatenation bailout: Module is not an ECMAScript module"
+      ],
+      "depth": 1,
+      "source": "!function(e){var n={};function t(r){if(n[r])return n[r].exports;var o=n[r]={i:r,l:!1,exports:{}};return e[r].call(o.exports,o,o.exports,t),o.l=!0,o.exports}t.m=e,t.c=n,t.d=function(e,n,r){t.o(e,n)||Object.defineProperty(e,n,{enumerable:!0,get:r})},t.r=function(e){\"undefined\"!=typeof Symbol&&Symbol.toStringTag&&Object.defineProperty(e,Symbol.toStringTag,{value:\"Module\"}),Object.defineProperty(e,\"__esModule\",{value:!0})},t.t=function(e,n){if(1&n&&(e=t(e)),8&n)return e;if(4&n&&\"object\"==typeof e&&e&&e.__esModule)return e;var r=Object.create(null);if(t.r(r),Object.defineProperty(r,\"default\",{enumerable:!0,value:e}),2&n&&\"string\"!=typeof e)for(var o in e)t.d(r,o,function(n){return e[n]}.bind(null,o));return r},t.n=function(e){var n=e&&e.__esModule?function(){return e.default}:function(){return e};return t.d(n,\"a\",n),n},t.o=function(e,n){return Object.prototype.hasOwnProperty.call(e,n)},t.p=\"\",t(t.s=0)}([function(e,n,t){\"use strict\";t.r(n);t(1);angular.module(\"solitaire\",[\"klondike\",\"ngDraggable\"])},function(e,n){angular.module(\"klondike.scoring\",[]).service(\"scoring\",[function(){\"use strict\";this.score=0,this.newGame=function(){this.score=0},this.tableauCardTurnedUp=function(){this.score+=5},this.dropped=function(e,n){this.score+=function(e,n){if(\"TableauPile\"===n.name)return\"FoundationPile\"===e.name?-15:5;if(\"FoundationPile\"===n.name&&(\"TableauPile\"===e.name||\"WastePile\"===e.name))return 10}(e,n)||0},this.wasteRecycled=function(){this.score=Math.max(this.score-100,0)}}])}]);"
+    }
+  ],
+  "filteredModules": 0,
+  "logging": {
+    "webpack.buildChunkGraph.visitModules": {
+      "entries": [],
+      "filteredEntries": 2,
+      "debug": false
+    }
+  },
+  "children": []
+}
