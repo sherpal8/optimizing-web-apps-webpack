@@ -1,11 +1,10 @@
-angular.module("klondike.scoring", [])
-  .service("scoring", [function Scoring() {
+function Scoring() {
     "use strict";
 
     this.score = 0;
 
     this.newGame = function () {
-      this.score = 0;
+      this.score = 5;
     };
     this.tableauCardTurnedUp = function () {
       this.score += 5;
@@ -30,4 +29,30 @@ angular.module("klondike.scoring", [])
         }
       }
     }
-  }]);
+  }
+
+console.log('[scoring] evaluating');
+
+/** in essence, function below is to go through every function & if changes, to do reload of that function only */
+if (module.hot) {
+
+  module.hot.accept(console.log.bind(console));
+
+  const doc = angular.element(document);
+  const injector = doc.injector();
+
+  if (injector) {
+    const actualService = injector.get("scoring");
+    const newScoringService = new Scoring();
+    // note: just replaces functions
+    console.log(actualService)
+    Object.keys(actualService)
+      .filter(key => typeof actualService[key] === "function")
+      .forEach(key => actualService[key] === newScoringService[key]);
+    doc.find('html').scope().$apply();
+    console.info('[scoring] Hot Swapper!!');
+  }
+};
+
+angular.module("klondike.scoring", [])
+  .service("scoring", [Scoring]);
