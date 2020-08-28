@@ -31,7 +31,11 @@ function Scoring() {
     }
   }
 
-console.log('[scoring] evaluating');
+  console.log(ENV_IS)
+
+  if (ENV_IS_DEVELOPMENT) {
+    console.log('[scoring] evaluating');
+  };
 
 /** in essence, function below is to go through every function & if changes, to do reload of that function only */
 if (module.hot) {
@@ -50,7 +54,7 @@ if (module.hot) {
       .filter(key => typeof actualService[key] === "function")
       .forEach(key => actualService[key] === newScoringService[key]);
     doc.find('html').scope().$apply();
-    console.info('[scoring] Hot Swapper!!');
+    console.info('[scoring] Hot Swapped!!');
   }
 };
 
