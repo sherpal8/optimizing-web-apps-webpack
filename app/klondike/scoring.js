@@ -4,7 +4,7 @@ function Scoring() {
     this.score = 0;
 
     this.newGame = function () {
-      this.score = 5;
+      this.score = 0;
     };
     this.tableauCardTurnedUp = function () {
       this.score += 5;

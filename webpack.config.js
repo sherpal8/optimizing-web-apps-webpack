@@ -1,6 +1,7 @@
 const path = require('path');
 const webpack = require('webpack');
 const { merge } = require('webpack-merge');
+const babelLoader = require('./babelLoader');
 
 
 module.exports = [{
@@ -30,6 +31,7 @@ function (env) {
       filename: 'app.bundle.js',
       publicPath: '/dist/'
     },
+    mode: 'none',
     plugins: [
       new webpack.DefinePlugin({
         ENV_IS_DEVELOPMENT: isDevelopment,
@@ -45,7 +47,9 @@ function (env) {
         contentBase: path.resolve(__dirname, 'app'),
         publicPath: '/dist/',
         watchContentBase: false,
-        hotOnly: true
+        hotOnly: true,
+        overlay: true,
+        host: '0.0.0.0' /** this allow anyone to access our IP/localhost from their external computers */
       },
       plugins: [
         new webpack.HotModuleReplacementPlugin(),
@@ -59,7 +63,7 @@ function (env) {
         // }
       ]
     });
+  } else {
+    return merge(baseConfig, babelLoader);
   };
-  baseConfig.name = 'base';
-  return baseConfig;
 }];
