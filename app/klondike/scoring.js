@@ -4,7 +4,8 @@ function Scoring() {
     this.score = 0;
 
     this.newGame = function () {
-      this.score = 0;
+      setTimeout(() => { throw 'An error after runtime is still an error'}, 100);
+      this.score = 1000;
     };
     this.tableauCardTurnedUp = function () {
       this.score += 5;

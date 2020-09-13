@@ -1,12 +1,13 @@
 module.exports = {
   presets: [
     ['@babel/preset-env', {
-      debug: true,
+      debug: false,
       modules: false,
       targets: {
         browsers: ['> 1%'],
       },
-      useBuiltIns: 'usage'
+      useBuiltIns: 'usage',
+      corejs: 3
     }]
   ]
 };

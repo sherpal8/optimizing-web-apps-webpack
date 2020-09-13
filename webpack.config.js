@@ -2,7 +2,7 @@ const path = require('path');
 const webpack = require('webpack');
 const { merge } = require('webpack-merge');
 const babelLoader = require('./babelLoader');
-
+const { CleanWebpackPlugin } = require('clean-webpack-plugin');
 
 module.exports = [{
   name: 'other',
@@ -26,6 +26,7 @@ function (env) {
   
   const baseConfig = {
     entry: './app/app.js',
+    devtool: 'source-map',
     output: {
       path: path.resolve(__dirname, 'app/dist'),
       filename: 'app.bundle.js',
@@ -33,6 +34,7 @@ function (env) {
     },
     mode: 'none',
     plugins: [
+      new CleanWebpackPlugin({ dry: true, cleanOnceBeforeBuildPatterns: ['app/dist'] }),
       new webpack.DefinePlugin({
         ENV_IS_DEVELOPMENT: isDevelopment,
         ENV_IS : JSON.stringify(env)
@@ -52,6 +54,7 @@ function (env) {
         host: '0.0.0.0' /** this allow anyone to access our IP/localhost from their external computers */
       },
       plugins: [
+        new webpack.NamedModulesPlugin(),
         new webpack.HotModuleReplacementPlugin(),
         // {  /** to create/ compile our own plugin */
         //   apply(compiler) {
